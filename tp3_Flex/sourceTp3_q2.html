@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" >
+        <link rel="stylesheet" href="styleTP3_q2.css" >
+		<meta name="author" content="christian Duccini" >
+        <title>Ma 1° "belle" page Web</title>
+    </head>
+	<body>
+	 	<section>
+           <header>
+		   <h1>
+                 <img src="images/tn_ChrisDuc.jpg" alt="C'est moi" id="logo">
+            Ma Boîte à Images</h1>
+ 				<nav>
+					<ul>
+                    <li><a href="#medias">Médias</a></li>
+                    <li><a href="#distributions">Distribution</a></li>
+                    <li><a href="#sondage">Sondage</a></li>
+                    <li><a href="#contact">Contact</a></li>
+					</ul>
+				</nav>
+ 				<div id="banniere_image">           
+				</div>
+            </header>			
+            <section id="medias">
+ 			  <h2>Médias</h2>
+              <article>
+ 			  <h3>Mes films favoris :</h3>
+			  <ul id="liste_affiche">
+					<li>
+						<figure>
+						<a href="https://interstellar.withgoogle.com/"> 
+					<img src="images/interstellar.jpg" alt="trailer" > </a>
+						<figcaption>
+					 	<a href="http://www.allocine.fr/video/player_gen_cmedia=19548515&amp;cfilm=114782.html">Insterstellar</a>					
+						</figcaption>
+						</figure>
+					</li>
+					<li>
+						<figure>
+						<a href="http://akas.imdb.com/title/tt0089881/combined"> 
+						<img  src="images/ran.jpg" alt="trailer">
+						</a>
+						<figcaption>
+					 	<a href="">Ran</a>					
+						</figcaption>
+						</figure>
+					</li>
+					<li>
+						<figure>
+						<a href="http://www.imdb.fr/title/tt0071853/"> 
+						<img  src="images/sacre-graal.jpg" alt="trailer">
+						</a>
+						<figcaption>
+					 	<a href="">Sacre Graal</a>					
+						</figcaption>
+						</figure>
+					</li>
+					<li>
+						<figure>
+						<a href="http://www.imdb.fr/title/tt0405094/combined"> 
+						<img  src="images/laViedesAutres.jpg" alt="trailer">  
+						</a>
+						<figcaption>
+					 	<a href="">La vie des autres</a>					
+						</figcaption>
+						</figure>
+					</li>
+					<li>
+						<figure>
+						<a href="http://www.imdb.fr/title/tt1258141/combined"> 
+						<img src="images/je_laimais.jpg" alt="trailer"> 
+						</a>
+						<figcaption>
+					 	<a href="">Je l'aimais</a>					
+						</figcaption>
+						</figure>
+					</li>
+				</ul>
+			   </article>
+			</section>
+			<div id="container">	<!-- Rajout pour flex. Il faudrait définir une section et des sous-sections -->
+            <section id="distributions">
+ 			<h2>Distribution</h2>
+               <article id="realisateur">
+					<h3>Réalisateurs</h3>
+					<ul>
+					<li>Akira Kurosawa :
+						<dl>
+						<dt>Ran</dt>
+						<dd class="baratin">Super film japonais. Mais il faut aimer les plans fixes</dd>
+						<dt>Les 7 samouraïs</dt>
+						<dd class="baratin">Vieux film Noir et Blanc, a été repris par Hollywood, en moins bien (les 7 mercenaires)</dd>
+						</dl>
+					</li>
+					<li class="favori" >Mickael Moore
+						<dl>
+						<dt>Bowling for Columbine</dt>
+						<dd class="baratin">Ca donne pas envie d'être un lapin aux USA ...</dd>
+						<dt>Sicko</dt>
+						<dd class="baratin">Ca donne pas envie d'être malade aux USA...</dd>
+						</dl>
+					</li>
+					</ul>
+				</article>
+				<article id="acteurs">
+					<h3>Acteurs et actrices</h3>
+					<ol type="A">
+					<li  >Audrey Tautou
+						<ul>
+						<li>Le Fabuleux Destin d'Amélie Poulain</li>
+						<li>Thérèse Desqueyroux</li>
+						</ul>
+					</li>
+					<li class="favori">Scarlett Johansson
+						<ul>
+						<li>Lost in translation</li>
+						<li>Match Point</li>
+						</ul>
+					</li>
+					</ol>
+			   </article>
+
+			</section>
+            <section id="sondage">
+                      <h2>Sondage</h2>
+			<form method="post" >
+				<p> Genre:
+				<select name="genre" id="genre">
+					<option selected="selected" value="Mr">Monsieur</option>
+					<option value="Melle">Mademoiselle</option>
+					<option value="Mme">Madame</option>
+				</select>
+				</p>
+			
+				<p> Nom 
+				<input class="inputText" name="nom" value="Saisissez votre nom svp" type="text">
+				</p>
+			
+				<p> Prénom 
+				<input class="inputText" name="prenom" value="Saisissez votre prénom svp" type="text">
+				</p>
+		
+				<p> Nombre de films vus par mois :<br >
+				<input name="nbFilms" value="0" type="radio">	moins de 5 
+				<input name="nbFilms" value="1" checked="checked" type="radio">	entre 5 et 10 
+				<input name="nbFilms" value="2" type="radio">	entre 10 et 20 
+				<br >
+				<input name="nbFilms" value="3" type="radio">	entre 20 et 50
+				<input name="nbFilms" value="4" type="radio">	plus de 50 
+				</p>
+	
+				<p>Film(s) que j'aime<br>
+				<input name="film1" value="Insterstellar" type="checkbox"> Insterstellar
+				<input name="film2" value="f2" type="checkbox"> film2
+				<input name="film3" value="f3" type="checkbox">	film3
+				<input name="film4" value="f4" type="checkbox">	film4
+				<input name="film5" value="f5" type="checkbox">	film5 
+				</p>
+	
+				<p>
+				<input name="Submit" value="Envoyer le formulaire" type="submit">
+				</p>	
+			</form>
+			</section> 
+			</div>
+            <footer id="contact">
+                <div>
+					<h3>Contact : courriel au <a href="mailto:Christian.Duccini@iut-valence.fr"> webmaster </a></h3>
+                </div>
+             </footer>
+		</section>
+   </body>
+</html>
