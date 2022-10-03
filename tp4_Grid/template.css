@@ -41,17 +41,47 @@ header h1, footer p {
 /* A compléter (la partie navigation) */
 
 nav {
-  background-color: darkgray;
+	background-color: Darkgrey;
+	float: left;
+	padding-left : 0px ;
+	padding-right : 0px ;
+    display: flex;
+    flex-direction: column;
+	justify-content: space-between;
+	min-height: 70vh;
 }
 
 nav ul {
-  text-align: center;
+  flex: 1 1 auto;
+  list-style-type: none;
+  padding-left: 2px;
 }
 
 nav ul li{
+	text-align : center;
+	padding-top : 20px;
+	padding-bottom : 20px;
 }
 
 nav a {
+  padding: 1em;
+  color:#210F7D;
+  font-weight:bold;
+  text-decoration:none;
+  text-align:center;
+  border-radius: 10px;
+  border-bottom: 1px solid rgba(255,255,255,.3);
+}
+nav a:hover {
+  color:red;
+  background-color: rgba(20,20,20,0.2);
+}
+nav a:active {
+  color:yellow;
+}
+nav li.page_active a {
+  color: white;
+  background-color: #428bca;
 }
 /* etc... */
 
