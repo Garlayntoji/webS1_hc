@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, Verdana, sans-serif;
+    color: black;
+	font-size: small;
+}
+
+table {
+    width: 1200px;
+    margin: auto;
+    border-radius: 50px;
+}
+
+#placeholder{
+}
+
+#titre_bandeau{
+    text-align: right;
+    font-size: x-large;
+}
+
+img{
+    width: 125;
+    height: 125;
+    text-align: right;
+}
+
+#entete {
+    display: flex;
+}
+
+#entete_date {
+    width: 90%;
+    display: inline-block;
+    text-align: right;
+}
+
+
+header h1 {
+    text-align: center;
+    font-size: xx-large;
+}
+
+div {
+	text-align: right;
+}
