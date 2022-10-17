@@ -18,11 +18,6 @@ table {
     font-size: x-large;
 }
 
-img{
-    width: 125;
-    height: 125;
-    text-align: right;
-}
 
 #entete {
     display: flex;
@@ -34,12 +29,75 @@ img{
     text-align: right;
 }
 
+#bandeau {
+    display: flex;
+    align-items: stretch;
+}
 
-header h1 {
+#bandeau > div {
+    margin: 10px;
+	text-align: center;
+    line-height: 75px;
+	font-size: 30px;
+    
+}
+
+#bandeau > .titre-journal {
     text-align: center;
+    background-color: brown;
+}
+
+#bandeau > .logo {
+    text-align: right;
+
+    background-color: aqua;
+}
+
+#gros_titre {
+    font-weight: 900;
     font-size: xx-large;
 }
 
-div {
-	text-align: right;
+.nolwenn_resume {
+    display: flex;
+}
+
+#nom_portrait {
+    display: inline-block;
+    font-size: x-large;
+    color: red;
+}
+
+#description {
+    display: inline-block;
+    font-size: x-large;
+}
+
+#partie_photo {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
+
+    background-color: blueviolet;
+}
+
+#article {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 50px;
+
+    background-color: crimson;
+}
+
+.part1 {
+    columns: 1;
+    text-align: justify;
+}
+
+.part2 {
+    text-align: justify;
+}
+
+.part3 {
+    text-align: justify;
 }
