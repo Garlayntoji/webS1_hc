@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, Verdana, sans-serif;
+    color: black;
+	font-size: small;
+}
+
+
+#placeholder{
+}
+
+#titre_bandeau{
+    text-align: right;
+    font-size: x-large;
+}
+
+
+#entete {
+    display: flex;
+}
+
+#entete_date {
+    width: 90%;
+    display: inline-block;
+    text-align: right;
+}
+
+#bandeau {
+    display: flex;
+    align-items: stretch;
+}
+
+#bandeau > div {
+    margin: 10px;
+	text-align: center;
+    line-height: 75px;
+	font-size: 30px;
+    
+}
+
+#bandeau > .titre-journal {
+    text-align: center;
+}
+
+#bandeau > .logo {
+    text-align: right;
+}
+
+#gros_titre {
+    font-weight: 900;
+    font-size: xx-large;
+}
+
+.nolwenn_resume {
+    display: flex;
+}
+
+#nom_portrait {
+    display: inline-block;
+    font-size: x-large;
+    color: red;
+}
+
+#description {
+    display: inline-block;
+    font-size: x-large;
+}
+
+.format-part3-photo {
+    display: flex;
+    flex-direction: row;
+}
+
+#slogan_photo {
+    margin-left: 15%;
+}
+
+#partie_photo {
+    margin-left: 10%;
+}
+
+.dates_importantes {
+    width: 60%;
+    margin-right: 5%;
+}
+
+.part3 {
+    columns: 1;
+    text-align: justify;
+    margin-left: auto;
+}
+
+#article {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 50px;
+    width: 70%;
+}
+
+.part1 {
+    columns: 1;
+    text-align: justify;
+}
+
+.part2 {
+    text-align: justify;
+}

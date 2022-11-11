@@ -4,11 +4,6 @@ body {
 	font-size: small;
 }
 
-table {
-    width: 1200px;
-    margin: auto;
-    border-radius: 50px;
-}
 
 #placeholder{
 }
@@ -44,13 +39,10 @@ table {
 
 #bandeau > .titre-journal {
     text-align: center;
-    background-color: brown;
 }
 
 #bandeau > .logo {
     text-align: right;
-
-    background-color: aqua;
 }
 
 #gros_titre {
@@ -73,20 +65,35 @@ table {
     font-size: x-large;
 }
 
-#partie_photo {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-gap: 20px;
+.format-part3-photo {
+    display: flex;
+    flex-direction: row;
+}
 
-    background-color: blueviolet;
+#slogan_photo {
+    margin-left: 15%;
+}
+
+#partie_photo {
+    margin-left: 10%;
+}
+
+.dates_importantes {
+    width: 60%;
+    margin-right: 5%;
+}
+
+.part3 {
+    columns: 1;
+    text-align: justify;
+    margin-left: auto;
 }
 
 #article {
     display: grid;
     grid-template-columns: auto auto auto;
     grid-gap: 50px;
-
-    background-color: crimson;
+    width: 70%;
 }
 
 .part1 {
@@ -95,9 +102,5 @@ table {
 }
 
 .part2 {
-    text-align: justify;
-}
-
-.part3 {
     text-align: justify;
 }
